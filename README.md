@@ -36,3 +36,5 @@ This dashboard allows you to:
 7. **Dark/Light Mode**  
    Toggle theme and save preference using LocalStorage.
 
+https://eriicaaxz0-glitch.github.io/Trading-Dashboard-Pro/
+Made by me, Erica.
