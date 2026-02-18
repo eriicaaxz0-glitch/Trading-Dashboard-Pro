@@ -1,0 +1,72 @@
+:root {
+  --bg: #0f1220;
+  --card: #161a2e;
+  --text: #eaeaf0;
+}
+
+body.light {
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --text: #1e1e1e;
+}
+
+* { box-sizing: border-box; font-family: system-ui, Arial; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+
+.app { max-width: 1000px; margin: auto; padding: 16px; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.trade, .history {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.trade input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.buttons { display: flex; gap: 10px; }
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#buyBtn { background: #2ecc71; }
+#sellBtn { background: #e74c3c; }
+
+.history ul { list-style: none; padding: 0; }
+.history li { font-size: 14px; opacity: .9; margin-bottom: 6px; }

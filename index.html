@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trading Dashboard Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="app">
+    <header class="top">
+      <h1>📊 Trading Dashboard Pro</h1>
+      <div class="controls">
+        <select id="coin">
+          <option value="bitcoin">BTC</option>
+          <option value="ethereum">ETH</option>
+          <option value="solana">SOL</option>
+        </select>
+        <button id="themeToggle">🌙</button>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Balance</h3>
+        <p>$<span id="balance">1000</span></p>
+      </div>
+      <div class="card">
+        <h3>Price</h3>
+        <p>$<span id="price">--</span></p>
+      </div>
+      <div class="card">
+        <h3>Your Asset</h3>
+        <p><span id="asset">0</span></p>
+      </div>
+      <div class="card">
+        <h3>Total P/L</h3>
+        <p id="pl">$0</p>
+      </div>
+    </section>
+
+    <canvas id="chart" height="120"></canvas>
+
+    <section class="trade">
+      <input id="amount" type="number" placeholder="Amount in USD" />
+      <div class="buttons">
+        <button id="buyBtn">Buy</button>
+        <button id="sellBtn">Sell</button>
+      </div>
+      <p id="message"></p>
+    </section>
+
+    <section class="history">
+      <h2>Trade History</h2>
+      <ul id="history"></ul>
+    </section>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
